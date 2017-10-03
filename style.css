@@ -268,15 +268,6 @@ header {
     bottom: -70px;
 }
 
-.header_scroll img {
-    transition: 0.5s;
-}
-
-.header_scroll a:focus img,
-.header_scroll a:hover img {
-    padding-bottom: 10px;
-}
-
 .header_scroll p {
     top: -10px;
     color: #ffffff;
