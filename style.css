@@ -115,6 +115,10 @@ body {
 }
 
 @media only screen and (max-width: 1410px) {
+    header {
+        background-position: center;
+    }
+    
     .nav {
         width: 100%;
     }
@@ -281,7 +285,109 @@ header {
     }
 }
 
-.lol {
+.code_design {
+    background-image: url("imgs/img.png");
+    background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: 522px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code_box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.code_box h2 {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 48px;
+    margin-right: 325px;
+}
+
+.code_box_bold {
+    font-weight: bold;
+}
+
+.code_box p {
+    margin-top: -20px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-weight: 200;
+    width: 584px;
+}
+
+.code_box button {
+    width: 205px;
+    height: 50px;
+    border: none;
+    background: #4e007c; /* Old browsers */
+    background: -moz-linear-gradient(left, #4e007c 3%, #b00084 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4e007c 3%,#b00084 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4e007c 3%,#b00084 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e007c', endColorstr='#b00084',GradientType=1 ); /* IE6-9 */
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Montserrat;
+    border-radius: 60px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 390px;
+}
+
+.code_box button:focus,
+.code_box button:hover {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 1204px) {
+    .code_design {
+        flex-direction: column;
+        background-position: center;
+    }
+    
+    .code_box h2 {
+        margin: 0;
+        margin-top: 20px;
+    }
+    
+    .code_box p {
+        text-align: center;
+        margin: 0;
+        margin-top: 30px;
+    }
+    
+    .code_box button {
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .code_design {
+        height: 750px;
+        background-size: cover;
+        background-position: center right; 
+    }
+    
+    .code_box h2 {
+        font-size: 40px;
+    }
+    
+    .code_box p {
+        width: 180%;
+    }
+}
+
+.what_do {
+    width: 100%;
+    height: 894px;
 }
