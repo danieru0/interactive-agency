@@ -350,8 +350,14 @@ header {
 
 @media only screen and (max-width: 1204px) {
     .code_design {
+        height: 650px;
         flex-direction: column;
         background-position: center;
+        background-size: cover;
+    }
+    
+    .code_box {
+        padding-bottom: 50px;
     }
     
     .code_box h2 {
@@ -374,7 +380,6 @@ header {
 @media only screen and (max-width: 640px) {
     .code_design {
         height: 750px;
-        background-size: cover;
         background-position: center right; 
     }
     
@@ -388,6 +393,141 @@ header {
 }
 
 .what_do {
+    position: relative;
     width: 100%;
     height: 894px;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.what_do h2 {
+    font-size: 40px;
+}
+
+.what_do_content {
+    width: 1320px;
+    padding-bottom: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.what_do_content_box {
+    width: 600px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.what_do_content_box img {
+    margin-right: 40px;
+}
+
+.what_do_content_box_text h3 {
+    font-size: 25px;
+}
+
+.what_do_content_box_text p {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.four {
+    padding-left: 10px;
+}
+
+.what_do button {
+    position: absolute;
+    bottom: 150px;
+    width: 205px;
+    height: 50px;
+    border: none;
+    background: #4e007c; /* Old browsers */
+    background: -moz-linear-gradient(left, #4e007c 3%, #b00084 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4e007c 3%,#b00084 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4e007c 3%,#b00084 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e007c', endColorstr='#b00084',GradientType=1 ); /* IE6-9 */
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Montserrat;
+    border-radius: 60px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.what_do button:focus,
+.what_do button:hover {
+    width: 230px;
+}
+
+@media only screen and (max-width: 1410px) {
+    .what_do_content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1216px) {
+    .what_do {
+        justify-content: flex-start;
+        height: 850px;
+    }
+    
+    .what_do button {
+        bottom: 50px;
+    }
+    
+    .two {
+        padding-right: 10px;
+    }
+    
+    .one {
+        padding-right:  35px;
+    }
+    
+    .three {
+        padding-right: 25px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 520px) {
+    .what_do {
+        height: 1380px;
+        text-align: center;
+    }
+    
+    .what_do h2 {
+        font-size: 36px;
+    }
+    
+    .what_do button {
+        bottom: 70px;
+    }
+    
+    .what_do_content_box img {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .what_do_content_box {
+        flex-direction: column;
+        text-align: center;
+        height: 280px;
+    }
+}
+
+.portfolio {
+    width: 100%;
+    height: 480px;
+    background-color: red;
 }
