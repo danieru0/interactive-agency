@@ -87,9 +87,69 @@
             <button>Ask for price</button>
         </section>
         <section class="portfolio">
-        
+            <h2 class="visuallyhidden">Portfolio</h2>
+            <div class="siema">
+                <div class="images-container">
+                    <img src="imgs/portfolio1.png" alt="Sample Text">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>Sample Text</h3>
+                            <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                            <button>Watch more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-container">
+                    <img src="imgs/portfolio2.png" alt="Neptune Template">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>Neptune Template</h3>
+                            <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                            <button>Watch more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-container">
+                    <img src="imgs/portfolio3.png" alt="Sample text">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>Sample Text</h3>
+                            <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                            <button>Watch more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-container">
+                    <img src="http://via.placeholder.com/640x480" alt="Sample Text">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>Sample Text</h3>
+                            <p>Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                            <button>Watch more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="prev portfolio_button">
+                <img src="imgs/back.png" alt="Previous picture">
+            </button>
+            <button class="next portfolio_button">
+                <img src="imgs/next.png" alt="Next picture">
+            </button>
         </section>
-    <script src="js/menu-hamburger.js"></script>
-    <script src="js/sticky-nav.js"></script>
+        <script src="js/menu-hamburger.js"></script>
+        <script src="js/sticky-nav.js"></script>
+        <script src="js/siema.min.js"></script>
+        <script>
+            const mySiema = new Siema({
+                draggable: false,
+                perPage: {
+                    1920: 3,
+                    1290: 2,
+                },
+            });
+            document.querySelector(".prev").addEventListener("click", () => mySiema.prev());
+            document.querySelector(".next").addEventListener("click", () => mySiema.next());
+        </script>
 	</body>
 </html>

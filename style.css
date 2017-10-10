@@ -529,5 +529,146 @@ header {
 .portfolio {
     width: 100%;
     height: 480px;
-    background-color: red;
+    position: relative;
+}
+
+.siema {
+    text-align: center;
+}
+
+.siema img {
+    width: 640px;
+    height: 480px;
+}
+
+.images-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 640px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s ease;
+    background-color: rgba(17,23,39,0.8);
+    opacity: 0;
+}
+
+.overlay_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay_text h3 {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.overlay_text p {
+    margin-top: -10px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 16px;
+    width: 450px;
+    margin-bottom: 60px;
+}
+
+.overlay_text button {
+    width: 205px;
+    height: 50px;
+    border: none;
+    background: #4e007c; /* Old browsers */
+    background: -moz-linear-gradient(left, #4e007c 3%, #b00084 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4e007c 3%,#b00084 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4e007c 3%,#b00084 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e007c', endColorstr='#b00084',GradientType=1 ); /* IE6-9 */
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Montserrat;
+    border-radius: 60px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.images-container:hover .overlay {
+    opacity: 1;
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.next {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    position: absolute;
+}
+
+.portfolio_button {
+    width: 58px;
+    height: 58px;
+    border: none;
+    background-color: #ggg;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 665px) {
+    .siema img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .overlay {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 473px) {
+    .overlay_text p {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .overlay_text button {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .siema img {
+        height: 300px;
+    }
+    
+    .prev {
+        bottom: -70px;
+    }
+    
+    .next {
+        bottom: -70px;
+    }
 }
