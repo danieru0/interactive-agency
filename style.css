@@ -823,9 +823,16 @@ header {
 .map {
     width: 100%;
     height: 605px;
+    position: relative;
 }
 
 #map_google {
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (max-width: 665px) {
+    .map {
+        top: -7px;
+    }
 }
