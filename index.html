@@ -164,9 +164,14 @@
             </div>
             <button>Watch more</button>
         </section>
+        <section class="map">
+            <h2 class="visuallyhidden">Google map</h2>
+            <div id="map_google"></div>
+        </section>
         <script src="js/menu-hamburger.js"></script>
         <script src="js/sticky-nav.js"></script>
         <script src="js/siema.min.js"></script>
+        <script src="js/map.js"></script>
         <script>
             const mySiema = new Siema({
                 draggable: false,
@@ -178,5 +183,17 @@
             document.querySelector(".prev").addEventListener("click", () => mySiema.prev());
             document.querySelector(".next").addEventListener("click", () => mySiema.next());
         </script>
+        <script>
+            function initMap() {
+                var mapContainer = document.getElementById("map");
+                var map = new google.maps.Map(mapContainer, {
+                    center: { lat: 40.723936, lng: 74.009931 },
+                    zoom: 12
+                });
+            }
+            
+            window.initMap = initMap;
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeF54LP7z2S4VyJxiljO7uyMx1JsD5WvU&callback=initMap"></script>
 	</body>
 </html>

@@ -819,3 +819,13 @@ header {
         height: 1600px;
     }
 }
+
+.map {
+    width: 100%;
+    height: 605px;
+}
+
+#map_google {
+    width: 100%;
+    height: 100%;
+}
