@@ -311,6 +311,10 @@ header {
     margin-right: 325px;
 }
 
+.code_box:last-child h2 {
+    margin-right: 364px;
+}
+
 .code_box_bold {
     font-weight: bold;
 }
@@ -363,6 +367,10 @@ header {
     .code_box h2 {
         margin: 0;
         margin-top: 20px;
+    }
+    
+    .code_box:last-child h2 {
+        margin: 0;
     }
     
     .code_box p {
@@ -534,11 +542,11 @@ header {
     padding: 0;
 }
 
-.siema {
+.portfolio_carousel {
     text-align: center;
 }
 
-.siema img {
+.porfolio_carousel img {
     width: 640px;
     height: 480px;
 }
@@ -656,7 +664,7 @@ header {
 }
 
 @media only screen and (max-width: 665px) {
-    .siema img {
+    .portfolio_carousel img {
         width: 100%;
         height: auto;
     }

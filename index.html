@@ -89,12 +89,12 @@
         <section class="portfolio">
             <h2 class="visuallyhidden">Portfolio</h2>
             <button class="prev portfolio_button">
-                <img src="imgs/back.png" alt="Previous picture">
+                <img src="imgs/back.png" alt="Previous project">
             </button>
             <button class="next portfolio_button">
-                <img src="imgs/next.png" alt="Next picture">
+                <img src="imgs/next.png" alt="Next project">
             </button>
-            <div class="siema">
+            <div class="portfolio_carousel">
                 <div class="images-container" tabindex="0">
                     <img src="imgs/portfolio1.png" alt="Sample Text">
                     <div class="overlay">
@@ -179,6 +179,7 @@ Try awsome tool for desgners <a href="#">symu.co</a></p>
         <script>
             const mySiema = new Siema({
                 draggable: false,
+                selector: ".portfolio_carousel",
                 perPage: {
                     1920: 3,
                     1290: 2,
