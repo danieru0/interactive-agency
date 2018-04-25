@@ -270,6 +270,8 @@ header {
     position: absolute;
     align-items: center;
     bottom: -70px;
+    left: 0;
+    right: 0;
 }
 
 .header_scroll p {
